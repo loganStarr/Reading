@@ -8,9 +8,34 @@
 
 int main()
 {
-    std::ifstream inputFile("input.txt"); 
-    while(true)
+    std::ifstream fileBuffer("input file path", ios::in | ios::binary);
+    char input[1024];
+    if (fileBuffer.is_open())
     {
+        fileBuffer.seekg(0, ios::beg);
+        fileBuffer.getline(input, 1024);
+    }
+    int index = 0;
+    while (true)
+    {
+        if (input[index] == 'T')
+        {
+            short Degree = 0;
+            while (motor.position() < Degree)
+            {
+                motor.set_duty_cycle_sp(40);
+
+            }
+        }
+        if (input[index] == 'M')
+        {
+            short Degree = 0;
+            while(motor.position() < Degree)
+            {
+                motor.set_duty_cycle_sp(40);
+
+            }
+        }
         char Tick;
         Tick << inputFile;
         char 
