@@ -175,7 +175,12 @@ obj/program.o: src/program.cpp \
  /usr/arm-linux-gnueabi/include/c++/6/ratio \
  /usr/arm-linux-gnueabi/include/c++/6/ctime \
  /usr/arm-linux-gnueabi/include/c++/6/bits/parse_numbers.h \
- /usr/arm-linux-gnueabi/include/c++/6/thread
+ /usr/arm-linux-gnueabi/include/c++/6/thread \
+ /usr/arm-linux-gnueabi/include/c++/6/fstream \
+ /usr/arm-linux-gnueabi/include/c++/6/bits/codecvt.h \
+ /usr/arm-linux-gnueabi/include/c++/6/arm-linux-gnueabi/bits/basic_file.h \
+ /usr/arm-linux-gnueabi/include/c++/6/arm-linux-gnueabi/bits/c++io.h \
+ /usr/arm-linux-gnueabi/include/c++/6/bits/fstream.tcc
 
 /usr/arm-linux-gnueabi/include/stdc-predef.h:
 
@@ -532,3 +537,13 @@ inc/ev3dev.h:
 /usr/arm-linux-gnueabi/include/c++/6/bits/parse_numbers.h:
 
 /usr/arm-linux-gnueabi/include/c++/6/thread:
+
+/usr/arm-linux-gnueabi/include/c++/6/fstream:
+
+/usr/arm-linux-gnueabi/include/c++/6/bits/codecvt.h:
+
+/usr/arm-linux-gnueabi/include/c++/6/arm-linux-gnueabi/bits/basic_file.h:
+
+/usr/arm-linux-gnueabi/include/c++/6/arm-linux-gnueabi/bits/c++io.h:
+
+/usr/arm-linux-gnueabi/include/c++/6/bits/fstream.tcc:
