@@ -18,7 +18,7 @@ int main()
     int index = 0;
     float D = 254.43;
     input[0] = 'T';
-    input[1] = 244;
+    input[1] = 2;
     input[2] = 00;
     ev3dev::medium_motor Right(ev3dev::OUTPUT_B);
     ev3dev::medium_motor Left(ev3dev::OUTPUT_C);
@@ -28,13 +28,16 @@ int main()
 
     while (index < 1)
     {
-        if (input[index] == 'T')
+        Left.set_position(0);
+        Right.set_position(0);
+        if(input[index] == 'R')
         {
             short Degree = input[index+1];
-            while (Left.position() < Degree && Right.position() < Degree)
+            float curr = 0;
+            while (curr > Degree)
             {
                 int Diff = Left.position()-Right.position();
-                float curr = Diff / D;
+                curr = Diff / D;
                 
                 Right.set_duty_cycle_sp(60);
                 Right.run_direct();
@@ -42,8 +45,29 @@ int main()
                 Left.run_direct();
             }
             index+=2;
-            Left.set_position(0);
-            Right.set_position(0);
+            
+        }
+        if (input[index] == 'T')
+        {
+            short Degree = input[index+1];
+            float curr = 0;
+            
+
+            while (curr < Degree)
+            {
+                int Diff = Left.position()-Right.position();
+                curr = Diff / D;
+                std::cout << "LEFT:" << Left.position() << std::endl << std::flush;
+                std::cout << "RIGHT:" << Right.position() << std::endl << std::flush;
+
+                //std::cout << curr << std::flush;
+                //:)
+                Right.set_duty_cycle_sp(-60);
+                Right.run_direct();
+                Left.set_duty_cycle_sp(60);
+                Left.run_direct();
+            }
+            index+=2;
         }
         if (input[index] == 'M')
         {
@@ -56,8 +80,6 @@ int main()
                 Left.run_direct();
             }
             index+=2;
-            Left.set_position(0);
-            Right.set_position(0);
         }
         
     }
