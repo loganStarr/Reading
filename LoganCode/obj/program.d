@@ -171,7 +171,18 @@ obj/program.o: src/program.cpp \
  /usr/arm-linux-gnueabi/include/c++/6/bits/ostream.tcc \
  /usr/arm-linux-gnueabi/include/c++/6/istream \
  /usr/arm-linux-gnueabi/include/c++/6/bits/istream.tcc \
- /usr/arm-linux-gnueabi/include/c++/6/chrono \
+ /usr/arm-linux-gnueabi/include/c++/6/cmath \
+ /usr/arm-linux-gnueabi/include/math.h \
+ /usr/arm-linux-gnueabi/include/bits/math-vector.h \
+ /usr/arm-linux-gnueabi/include/bits/libm-simd-decl-stubs.h \
+ /usr/arm-linux-gnueabi/include/bits/huge_val.h \
+ /usr/arm-linux-gnueabi/include/bits/huge_valf.h \
+ /usr/arm-linux-gnueabi/include/bits/huge_vall.h \
+ /usr/arm-linux-gnueabi/include/bits/inf.h \
+ /usr/arm-linux-gnueabi/include/bits/nan.h \
+ /usr/arm-linux-gnueabi/include/bits/mathdef.h \
+ /usr/arm-linux-gnueabi/include/bits/mathcalls.h inc/Turn.h inc/Command.h \
+ inc/Move.h /usr/arm-linux-gnueabi/include/c++/6/chrono \
  /usr/arm-linux-gnueabi/include/c++/6/ratio \
  /usr/arm-linux-gnueabi/include/c++/6/ctime \
  /usr/arm-linux-gnueabi/include/c++/6/bits/parse_numbers.h \
@@ -527,6 +538,34 @@ inc/ev3dev.h:
 /usr/arm-linux-gnueabi/include/c++/6/istream:
 
 /usr/arm-linux-gnueabi/include/c++/6/bits/istream.tcc:
+
+/usr/arm-linux-gnueabi/include/c++/6/cmath:
+
+/usr/arm-linux-gnueabi/include/math.h:
+
+/usr/arm-linux-gnueabi/include/bits/math-vector.h:
+
+/usr/arm-linux-gnueabi/include/bits/libm-simd-decl-stubs.h:
+
+/usr/arm-linux-gnueabi/include/bits/huge_val.h:
+
+/usr/arm-linux-gnueabi/include/bits/huge_valf.h:
+
+/usr/arm-linux-gnueabi/include/bits/huge_vall.h:
+
+/usr/arm-linux-gnueabi/include/bits/inf.h:
+
+/usr/arm-linux-gnueabi/include/bits/nan.h:
+
+/usr/arm-linux-gnueabi/include/bits/mathdef.h:
+
+/usr/arm-linux-gnueabi/include/bits/mathcalls.h:
+
+inc/Turn.h:
+
+inc/Command.h:
+
+inc/Move.h:
 
 /usr/arm-linux-gnueabi/include/c++/6/chrono:
 
