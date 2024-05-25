@@ -14,13 +14,10 @@ Move::Move(int powerLeft, int powerRight, std::function<bool(int)> stopFunction,
 	this->stopFunction = stopFunction;
 	this->Left = Left;
 	this->Right = Right;
-	std::cout << this->Right << std::endl;
-    std::cout << this->Left << std::endl;
 
 }
 void Move::run()
 {
-	std::cout << powerRight << std::endl;
 	Right->set_duty_cycle_sp(powerRight);
 	Right->run_direct();
 	Left->set_duty_cycle_sp(powerLeft);

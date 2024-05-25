@@ -1,0 +1,15 @@
+C:\Users\Brandon.Dao\source\repos\Reading\bin\Debug\net8.0\Reading.exe
+C:\Users\Brandon.Dao\source\repos\Reading\bin\Debug\net8.0\Reading.deps.json
+C:\Users\Brandon.Dao\source\repos\Reading\bin\Debug\net8.0\Reading.runtimeconfig.json
+C:\Users\Brandon.Dao\source\repos\Reading\bin\Debug\net8.0\Reading.dll
+C:\Users\Brandon.Dao\source\repos\Reading\bin\Debug\net8.0\Reading.pdb
+C:\Users\Brandon.Dao\source\repos\Reading\obj\Debug\net8.0\Reading.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Brandon.Dao\source\repos\Reading\obj\Debug\net8.0\Reading.AssemblyInfoInputs.cache
+C:\Users\Brandon.Dao\source\repos\Reading\obj\Debug\net8.0\Reading.AssemblyInfo.cs
+C:\Users\Brandon.Dao\source\repos\Reading\obj\Debug\net8.0\Reading.csproj.CoreCompileInputs.cache
+C:\Users\Brandon.Dao\source\repos\Reading\obj\Debug\net8.0\Reading.sourcelink.json
+C:\Users\Brandon.Dao\source\repos\Reading\obj\Debug\net8.0\Reading.dll
+C:\Users\Brandon.Dao\source\repos\Reading\obj\Debug\net8.0\refint\Reading.dll
+C:\Users\Brandon.Dao\source\repos\Reading\obj\Debug\net8.0\Reading.pdb
+C:\Users\Brandon.Dao\source\repos\Reading\obj\Debug\net8.0\Reading.genruntimeconfig.cache
+C:\Users\Brandon.Dao\source\repos\Reading\obj\Debug\net8.0\ref\Reading.dll
