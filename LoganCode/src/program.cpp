@@ -16,7 +16,7 @@ class RobotDefition
 {
 public:
 
-    const double diameterRobot = 50;
+    const double diameterRobot = 254.43;
     ev3dev::medium_motor* Left;
     ev3dev::medium_motor* Right;
     bool MoveToDegree(int degreeTarget)
@@ -25,7 +25,7 @@ public:
     }
     bool TurnToDegree(int degreeTarget)
     {
-        double Amount = Left->position() + Right->position();
+        double Amount = Left->position() - Right->position();
         Amount /= diameterRobot;
         Amount *= (180/M_PI);
         std::cout << Amount << std::endl;
@@ -42,6 +42,13 @@ public:
 };
 int main()
 {
+    ev3dev::color_sensor* test =  new ev3dev::color_sensor(ev3dev::INPUT_1);
+    test->set_mode(ev3dev::color_sensor::mode_col_reflect);
+
+    while(true)
+    {
+        std::cout << test->reflected_light_intensity() << std::endl; //god is dead
+    }
     ev3dev::medium_motor* Right =  new ev3dev::medium_motor(ev3dev::OUTPUT_B);
     ev3dev::medium_motor* Left = new ev3dev::medium_motor(ev3dev::OUTPUT_C);
     Right->set_polarity(ev3dev::medium_motor::polarity_inversed);
@@ -58,14 +65,14 @@ int main()
     std::shared_ptr<Move> move(new Move(75, 75, MoveToAngle,200,Left,Right));
     std::shared_ptr<Turn> turn(new Turn(50, -50, TurnToDegree, 90, Left, Right));
 
-    Commands[0] = std::move(move);
-    Commands[1] = std::move(turn);
-    Commands[2] = std::move(move);
-    Commands[3] = std::move(turn);
-    Commands[4] = std::move(move);
-    Commands[5] = std::move(turn);
-    Commands[6] = std::move(move);
-    Commands[7] = std::move(turn);
+    Commands[0] = move;
+    Commands[1] = turn;
+    Commands[2] = move;
+    Commands[3] = turn;
+    Commands[4] = move;
+    Commands[5] = turn;
+    Commands[6] = move;
+    Commands[7] = turn;
 
     int index = 0;
     Commands[index]->setUp();
@@ -87,6 +94,6 @@ int main()
         }
     
     }
-    while(true){}
+
     return 0;
 }
